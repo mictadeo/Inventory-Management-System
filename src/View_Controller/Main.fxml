@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainController">
+   <children>
+      <Label layoutX="45.0" layoutY="39.0" text="Inventory Management System" textFill="#0931a8">
+         <font>
+            <Font name="Helvetica Neue Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="941.0" layoutY="441.0" mnemonicParsing="false" onAction="#exitButtonPushed" prefHeight="20.0" prefWidth="80.0" text="Exit" />
+      <TextField layoutX="278.0" layoutY="135.0" prefHeight="27.0" prefWidth="204.0" />
+      <Button layoutX="190.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" text="Search" />
+      <Label layoutX="66.0" layoutY="139.0" text="Parts">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView layoutX="50.0" layoutY="180.0" prefHeight="150.0" prefWidth="450.0">
+        <columns>
+          <TableColumn prefWidth="92.0" text="Part ID" />
+          <TableColumn prefWidth="112.0" text="Part Name" />
+            <TableColumn prefWidth="109.0" text="Inventory Level" />
+            <TableColumn prefWidth="136.0" text="Price per Unit" />
+        </columns>
+      </TableView>
+      <Button layoutX="193.0" layoutY="344.0" mnemonicParsing="false" onAction="#addPartsButtonPushed" prefHeight="20.0" prefWidth="80.0" text="Add" />
+      <Button layoutX="293.0" layoutY="344.0" mnemonicParsing="false" onAction="#modifyPartsButtonPushed" prefHeight="20.0" prefWidth="80.0" text="Modify" />
+      <Button layoutX="392.0" layoutY="344.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" text="Delete" />
+      <TableView layoutX="590.0" layoutY="180.0" prefHeight="150.0" prefWidth="450.0">
+         <columns>
+            <TableColumn prefWidth="92.0" text="Product ID" />
+            <TableColumn prefWidth="112.0" text="Product Name" />
+            <TableColumn prefWidth="109.0" text="Inventory Level" />
+            <TableColumn prefWidth="136.0" text="Price per Unit" />
+         </columns>
+      </TableView>
+      <Button layoutX="742.0" layoutY="344.0" mnemonicParsing="false" onAction="#addProductsButtonPushed" prefHeight="20.0" prefWidth="80.0" text="Add" />
+      <Button layoutX="842.0" layoutY="344.0" mnemonicParsing="false" onAction="#modifyProductsButtonPushed" prefHeight="20.0" prefWidth="80.0" text="Modify" />
+      <Button layoutX="941.0" layoutY="344.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" text="Delete" />
+      <TextField layoutX="817.0" layoutY="126.0" prefHeight="27.0" prefWidth="204.0" />
+      <Button layoutX="729.0" layoutY="126.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" text="Search" />
+      <Label layoutX="605.0" layoutY="130.0" text="Products">
+         <font>
+            <Font name="Helvetica Neue Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
